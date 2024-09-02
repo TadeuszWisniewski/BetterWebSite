@@ -1,8 +1,18 @@
+@use "colors" as color;
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
+html {
+	scroll-padding-top: 74px;
+}
 body {
 	font-family: "Montserrat", sans-serif;
+	background-color: color.$bgColor;
+}
+@media (min-width: 992px) {
+	html {
+		scroll-padding-top: 72px;
+	}
 }
